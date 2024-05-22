@@ -1,0 +1,499 @@
+/*
+Josh's Custom CSS Reset
+https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+/* prettier-ignore */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html {
+  font-size: 18pt;
+  /* import below fonts from https://fonts.google.com/ */
+  font-family: "Inter", sans-serif;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/* prettier-ignore */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/* prettier-ignore */
+input, button, textarea, select {
+  font: inherit;
+}
+/* prettier-ignore */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/* prettier-ignore */
+#root, #__next {
+  isolation: isolate;
+}
+:root {
+  --text-color-1: #fff;
+  --text-color-2: #00ffc2;
+  --background-color1: #fafaf0;
+  --background-color2: #f5f4e4;
+  --border-color: rgba(0, 0, 0, 0.2);
+  --hover-color: #9daba9;
+}
+
+body::before {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transform: scale(1);
+  height: 100vh;
+  width: 100vw;
+  z-index: 0;
+  /* use correct CSS property to have "background.svg" file under assets folder set as background image here */
+  background-attachment: scroll;
+}
+
+code {
+  font-family: "Courier New", monospace;
+}
+
+
+/**---------------------------**/
+/*
+Josh's Custom CSS Reset
+https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+/* prettier-ignore */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html {
+  font-size: 18pt;
+  /* import below fonts from https://fonts.google.com/ */
+  font-family: "Inter", sans-serif;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/* prettier-ignore */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/* prettier-ignore */
+input, button, textarea, select {
+  font: inherit;
+}
+/* prettier-ignore */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/* prettier-ignore */
+#root, #__next {
+  isolation: isolate;
+}
+:root {
+  --text-color-1: #fff;
+  --text-color-2: #00ffc2;
+  --background-color1: #fafaf0;
+  --background-color2: #f5f4e4;
+  --border-color: rgba(0, 0, 0, 0.2);
+  --hover-color: #9daba9;
+}
+
+body::before {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transform: scale(1);
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  /* use correct CSS property to have "background.svg" file under assets folder set as background image here */
+  background-attachment: scroll;
+}
+
+code {
+  font-family: "Courier New", monospace;
+}
+
+
+/**---------------------------**/
+/*
+Josh's Custom CSS Reset
+https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+/* prettier-ignore */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html {
+  font-size: 18pt;
+  /* import below fonts from https://fonts.google.com/ */
+  font-family: "Inter", sans-serif;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  
+}
+/* prettier-ignore */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/* prettier-ignore */
+input, button, textarea, select {
+  font: inherit;
+}
+/* prettier-ignore */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/* prettier-ignore */
+#root, #__next {
+  isolation: isolate;
+}
+:root {
+  --text-color-1: #fff;
+  --text-color-2: #00ffc2;
+  --background-color1: #fafaf0;
+  --background-color2: #f5f4e4;
+  --border-color: rgba(0, 0, 0, 0.2);
+  --hover-color: #9daba9;
+}
+
+body::before {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transform: scale(1);
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  /* use correct CSS property to have "background.svg" file under assets folder set as background image here */
+  background-attachment: scroll;
+  background-image:url(/assets/background.svg);
+
+}
+
+code {
+  font-family: "Courier New", monospace;
+}
+
+
+/**-----------header----------------**/
+
+p{
+  font-size: 20px;
+}
+header{
+  display: flex;
+  width: 100%;
+  color: var(--text-color-1);
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid gray;
+}
+
+.container {
+  display: flex;
+  padding: 50px 200px 50px 100px;
+  flex-direction: column;
+  
+}
+.container p{
+  width: 100%;
+
+}
+.container p{
+  display: flex;
+justify-content: start;
+}
+
+h5{
+   color: var(--text-color-2);
+}
+
+h2{
+   width: 80%;
+}
+.container1 {
+  display: flex;
+  padding: 50px 100px;
+  flex-direction: row-reverse;
+  align-items: center; 
+}
+
+ img{
+    display: flex;
+    width: 50%;
+    padding: 10px;
+    border: 2px solid var(--text-color-2);
+    height: auto;
+    border-radius: 20px;
+    
+ }
+
+ button{
+  width: 80%;
+  background: transparent;
+  color: var(--text-color-1);
+  border-color:var(--text-color-2) ;
+  border-radius: 20px;
+  margin-top:10px;
+  padding:0 10px 0 10px;
+}
+button:hover{
+  background-color: var(--hover-color);
+}
+
+/**---main---**/
+.main {
+  display: flex;
+  color: var(--text-color-1);
+  flex-direction: column;
+  align-items: center;
+  padding: 6%;
+  border-bottom: 1px solid gray;
+
+}
+
+.content1,
+.content2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+  gap:30px;
+}
+
+.content1 img,
+.content2 img {
+  width: 100%;
+  max-width: 400px; 
+  padding: 10px;
+  border: 2px solid var(--text-color-2);
+  height: auto;
+  border-radius: 20px;
+}
+
+.main button{
+  width:300px;
+  margin:50px 0;
+}
+
+/**--------------**/
+.row{
+  display: flex;
+  flex-direction: row;
+  padding: 5%;
+}
+h6,h3, p{
+  display: flex;
+text-align: center;
+  justify-content: center;
+}
+.main1{
+  display: flex;
+  color: var(--text-color-1);
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 5%;
+  align-items: center;
+  width:100%;
+  border-bottom: 1px solid gray;
+
+}
+
+.content3{
+  display: flex;
+  height:auto ;
+  width:49%;
+  justify-content: space-around;
+  padding: 10px 0;
+  
+}
+
+.content4{
+  display: flex;
+  gap:5px;
+  flex-direction: column;
+  width: 50%;
+}
+.main1 button{
+  width: 300px;
+  margin:50px 0;
+ }
+
+/*** --------------**/
+.main2{
+  display: flex;
+  color: var(--text-color-1);
+  flex-direction: column;
+  padding: 10%;
+  align-items: center;
+  text-align: center;
+  width:100%;
+  border-bottom: 1px solid gray;
+  
+  
+}
+.row1{
+  display: flex;
+  flex-direction: row;
+  width:100%;
+  border:2px solid gray ;
+  text-align: center;
+  border-radius: 10px;
+  margin: 20px;
+ 
+}
+.small_btn{
+  border: 2px solid #00ffc2;
+  width:100px;
+  font-size: 15px;
+
+}
+.row1 p{
+  text-align: center;
+}
+h1{
+  display: flex;
+  justify-content: center;
+}
+.content5{
+  display: flex;
+  height:auto ;
+  flex-direction: column;
+  /* width:49%; */
+  justify-content: space-around;  
+  border: 1px solid grey;
+}
+
+.content5 .button,.content6 .button{
+  width:100px;
+  display: flex;
+  justify-content: center;
+  
+  
+}
+h3{
+  margin:50px;
+}
+
+.main3 p{
+  display: flex;
+  text-align: center;
+  width:100%;
+  padding: 10px;
+  
+}
+
+.main3 button{
+  width: 300px;
+  margin: 50px 500px 50px 500px;
+}
+
+/***footer**/
+.footer{
+  border-top: 1px solid gray;
+  display: flex;
+  
+}
+.icons{
+padding:50px 0;
+display: flex;
+justify-content: start;
+color:white;
+}
+
+.fa-twitter,.fa-instagram,.fa-linkedin,.fa-envelope{
+  border:  1px solid gray;
+  padding: 10px;
+  border-radius: 50px;
+  font-size: 20px;
+  margin: 0px 6px;  
+}
+
+
+/***------------Media Query------------*/
+
+@media (max-width: 1280px) {
+  html {
+    font-size: 13pt;
+  }
+}
+
+@media (max-width: 736px) {
+  html {
+    font-size: 13pt;
+  }
+}
+
+@media (max-width: 736px) {
+  html {
+    font-size: 11pt;
+  }
+  header{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+  }
+  
+  .container p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  width: 100%;
+
+  }
+  h2{
+      margin: 0 180px;
+  }
+  h5{
+    text-align: center;
+    justify-content: center;
+    margin: 0 150px 10px 150px;
+  }
+  
+ 
+  button{
+      text-align: center;
+      margin: 0 200px 0 200px;
+      width: 200px;
+  }
+  .container1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+  }
+  img{
+  height: 250px;
+  width: 500px;
+  object-fit: cover;
+  margin: 0 auto;
+  }
+}
+
+
