@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.container {
+    background: rgb(255, 253, 253);
+    margin: 70px;
+}
+
+.box {
+    position: relative;
+    font-size: 20pt;
+    text-align: center;
+    font-weight: 10px;
+    padding: 20px;
+}
+
+h1 {
+    color: rgb(145, 60, 60);
+    margin-bottom: 20px;
+}
+
+#inputBox {
+    width: 500px;
+    padding: 20px;
+    border: none;
+    outline: none;
+    font-style: italic;
+    text-align: left;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+
+
+.box li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: gray;
+    cursor: pointer;
+    position: relative;
+    padding: 10px 10px 10px 45px;
+    border: 1px solid lightgray;
+    
+}
+.box li:hover{
+    box-shadow: 1px 1px 1px 1px rgb(145, 60, 60);
+}
+
+.box li i {
+    position: absolute;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+
+.box li i::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    background: #fff;
+    transform: rotate(-45deg);
+}
+
+.box li::before {
+    content: '';
+    position: absolute;
+    left: 8px;
+    width: 30px;
+    height: 30px;
+    border-color: 1px color green;
+    border-radius: 50%;
+    background-color: lightgray;
+}
+
+.box li.done {
+    text-decoration: line-through;
+    
+}
+
+.box li.done:after {
+    content: '';
+    position: absolute;
+    left: 16px;
+    width: 12px;
+    height: 6px;
+    border-left: 2px solid green;
+    border-bottom: 2px solid green;
+    transform: rotate(315deg);
+   
+}
+
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid lightgray;
+    padding: 10px;
+}
+
+.filter-todos{
+    gap: 10px;
+    
+}
+
+#all,#completed,#active,#clearCompleted{
+    padding: 5px;
+    background: none;
+}
+
+
+.close {
+    position: absolute;
+    cursor: pointer;
+    margin-left: 430px; 
+
+}
+
+
+.main{
+    display: flex;
+    border: 1px solid gray;
+    
+}
+
+.main:hover{
+    border-color: rgb(145, 60, 60);
+    box-shadow: 1px 1px 1px 1px rgb(145, 60, 60);
+}
+#selectAll{
+   display: flex;
+   margin-left: 20px;
+   margin-top: 19px;
+}
+
+#active .close{
+    padding-left: 100px;
+}
+
+#all:focus,#completed:focus,#clearCompleted:focus,#active:focus{
+    border-color: rgb(145, 60, 60);
+    box-shadow: 1px 1px 1px 1px rgb(145, 60, 60);
+
+}

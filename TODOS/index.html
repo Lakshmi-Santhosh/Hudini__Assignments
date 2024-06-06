@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="box">
+        <h1>todos</h1>
+        <div class="main">
+        <input type="checkbox" id="selectAll"> 
+        <input type="text" id="inputBox" placeholder="What needs to be done?">
+        </div>
+        <ul id="list"></ul>
+        <div class="row">
+        <div id="itemsLeft"></div>
+        <div class="filter-todos" style="display: none;">
+            <button id="all">All</button>
+            <button id="completed">Completed</button>
+            <button id="active">Active</button>
+            <button id="clearCompleted">Clear Completed</button>
+            
+        </div>    
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
